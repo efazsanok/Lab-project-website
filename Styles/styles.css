@@ -3,6 +3,16 @@
     display: flex;
 }
 
+.btn-primary {
+    background-color: #3f0163;
+    color: white;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+}
+
 /* Navbar styles */
 .navbar {
     justify-content: space-between;
@@ -24,7 +34,25 @@
     margin-right: 30px;
 }
 
-.navbar {
+.navbar,
+.banner {
     max-width: 1440px;
     margin: 0 auto;
+}
+
+/* Bannner styles */
+.banner-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title {
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.banner-image {
+    width: 100%;
 }
