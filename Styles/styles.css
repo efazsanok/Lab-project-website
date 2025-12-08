@@ -1,0 +1,30 @@
+/* Shared styles */
+.display-flex {
+    display: flex;
+}
+
+/* Navbar styles */
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-item {
+    list-style: none;
+    margin-right: 30px;
+}
+
+.navbar {
+    max-width: 1440px;
+    margin: 0 auto;
+}
