@@ -23,12 +23,16 @@ h1,h2,h3,h4 {
     display: flex;
 }
 
-.text-gray {
-    color: #424242;
+.primary-color {
+    color: rgb(27, 67, 50);
+}
+
+.secondary-color{
+    color: beige;
 }
 
 .btn-primary {
-    background-color: rgb(27, 67, 50);;
+    background-color: rgb(27, 67, 50);
     color: white;
     padding: 15px 30px;
     text-decoration: none;
@@ -43,15 +47,16 @@ h1,h2,h3,h4 {
 }
 
 .btn-secondary {
-    background-color:rgb(27, 67, 50);;
-    color: white;
-    padding: 15px 30px;
+    /* background-color:rgb(27, 67, 50); */
+    color: rgb(27, 67, 50);;
+    padding: 0px 15px 10px;
     text-decoration: none;
     font-size: 1.25rem;
-    font-weight: 600;
+    font-weight: bold;
     border-radius: 5px;
-    border: none;
+    border-bottom: 5px solid rgb(27, 67, 50);
 }
+
 
 /* Navbar styles */
 
@@ -69,15 +74,16 @@ h1,h2,h3,h4 {
 }
 
 .nav-links a {
+    color: rgb(27, 67, 50);
     text-decoration: none;
     margin-left: 20px;
-    font-weight: 500;
-    font-size: 1.25rem;
+    font-weight: 600;
+    font-size: 1rem;
     transition: 0.3s;
 }
 
 .nav-links a:hover {
-    color:forestgreen
+    color:forestgreen;
 }
 
 /* Bannner styles */
@@ -175,3 +181,30 @@ h1,h2,h3,h4 {
     font-weight: bold;
     display: block;
 }
+
+/* Teaser */
+
+.knowledge-section {
+    display: flex;
+    background-color:beige;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.knowledge-content {
+    flex: 1;
+    padding: 80px 10%;
+}
+
+.knowledge-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.knowledge-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
