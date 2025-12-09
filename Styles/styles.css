@@ -28,7 +28,7 @@ h1,h2,h3,h4 {
 }
 
 .btn-primary {
-    background-color: forestgreen;
+    background-color: rgb(27, 67, 50);;
     color: white;
     padding: 15px 30px;
     text-decoration: none;
@@ -39,11 +39,11 @@ h1,h2,h3,h4 {
 }
 
 .btn-primary:hover {
-    background: darkgreen;
+    background:forestgreen;
 }
 
 .btn-secondary {
-    background-color: darkgreen;
+    background-color:rgb(27, 67, 50);;
     color: white;
     padding: 15px 30px;
     text-decoration: none;
@@ -58,7 +58,7 @@ h1,h2,h3,h4 {
 .brand {
     font-weight: 700;
     font-size: 2rem;
-    color: forestgreen;
+    color: rgb(27, 67, 50);
 }
 
 .navbar {
@@ -123,7 +123,8 @@ h1,h2,h3,h4 {
     margin: 0;
 }
 
-/* Sections styles */
+/*Mission Sections styles */
+
 .mission-section {
     padding: 80px 10%;
 }
@@ -131,7 +132,7 @@ h1,h2,h3,h4 {
 .section-title {
     text-align: center;
     font-size: 2.5rem;
-    color: darkgreen;
+    color: rgb(27, 67, 50);;
     margin-bottom: 50px;
 }
 
@@ -142,8 +143,8 @@ h1,h2,h3,h4 {
 
 .mission-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
 }
 
 .mission-card {
@@ -152,4 +153,25 @@ h1,h2,h3,h4 {
     border-radius: 10px;
     text-align: center;
     border: 5px dashed forestgreen;
+}
+
+/* Info section styles*/
+
+.info-section {
+    background-color:rgb(27, 67, 50);
+    color: white;
+    padding: 50px 10%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.info-item {
+    margin: 20px;
+}
+
+.count {
+    font-size: 3rem;
+    font-weight: bold;
+    display: block;
 }
