@@ -23,17 +23,21 @@ h1,h2,h3,h4 {
     display: flex;
 }
 
-.primary-color {
-    color: rgb(27, 67, 50);
-}
-
-.secondary-color{
-    color: beige;
+.color-palette {
+    color: #000000;
+    color: #1b4332;
+    color: #228b22;
+    color: #28DF99;
+    color: #99F3BD;
+    color: #d8f3dc;
+    color: #D2F6C5;
+    color: #F6F7D4;
+    color: #ffffff;
 }
 
 .btn-primary {
-    background-color: rgb(27, 67, 50);
-    color: white;
+    background-color: #1b4332;
+    color: #ffffff;
     padding: 15px 30px;
     text-decoration: none;
     font-size: 1.25rem;
@@ -43,17 +47,17 @@ h1,h2,h3,h4 {
 }
 
 .btn-primary:hover {
-    background:forestgreen;
+    background:#228b22;
 }
 
 .btn-secondary {
-    color: rgb(27, 67, 50);
+    color: #1b4332;
     padding: 0px 15px 10px;
     text-decoration: none;
     font-size: 1.25rem;
     font-weight: bold;
     border-radius: 5px;
-    border-bottom: 5px solid rgb(27, 67, 50);
+    border-bottom: 5px solid #1b4332;
 }
 
 .btn-join {
@@ -289,7 +293,7 @@ h1,h2,h3,h4 {
 .form-group select {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #d8f3dc;
     border-radius: 5px;
     box-sizing: border-box;
 }
