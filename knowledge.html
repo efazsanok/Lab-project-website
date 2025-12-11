@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab project</title>
+    <title>🌱 Tree Encyclopedia</title>
     <link rel="stylesheet" href="Styles/styles.css">
 </head>
 
@@ -21,14 +21,402 @@
     </nav>
 
     <header>
+        <div class="header-section">
+            <h1>Trees of Bangladesh</h1>
+            <p>Explore the native flora, crops, and timber that keep our country green and healthy.</p>
+        </div>
 
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search trees (e.g., Krishnachura, Mango, Tea)...">
+        </div>
+
+        <div class="filter-container">
+            <button class="filter-btn active" onclick="filterTrees('all')">Show All</button>
+            <button class="filter-btn" onclick="filterTrees('fruit')">Fruits 🥭</button>
+            <button class="filter-btn" onclick="filterTrees('flower')">Flowers 🌺</button>
+            <button class="filter-btn" onclick="filterTrees('medicine')">Medicinal 🌿</button>
+            <button class="filter-btn" onclick="filterTrees('food')">Food Source 🌾</button>
+            <button class="filter-btn" onclick="filterTrees('timber')">Timber & Wood 🪵</button>
+        </div>
     </header>
 
-    <main>
+    <main class="tree-section">
 
+        <section class="tree-grid">
 
+            <div class="tree-card category-fruit">
+                <img src="https://images.unsplash.com/photo-1550972624-d2e8738dfc75?w=500" class="tree-img"
+                    alt="Mango Tree">
+                <div class="card-content">
+                    <span class="badge bg-fruit">Fruit</span>
+                    <h3>Mango</h3>
+                    <p class="scientific-name">Mangifera indica</p>
+                    <p>The National Tree of Bangladesh. Famous in Rajshahi and Chapainawabganj for sweet varieties like
+                        Fazli and Langra.</p>
+                </div>
+                <div class="info-footer">📍 Common in: Rajshahi, Chapainawabganj</div>
+            </div>
 
-        
+            <div class="tree-card category-fruit">
+                <img src="https://plus.unsplash.com/premium_photo-1673360431388-693358055427?w=500" class="tree-img"
+                    alt="Jackfruit">
+                <div class="card-content">
+                    <span class="badge bg-fruit">Fruit</span>
+                    <h3>Jackfruit</h3>
+                    <p class="scientific-name">Artocarpus heterophyllus</p>
+                    <p>The National Fruit of Bangladesh. A massive tree that provides huge, sweet fruit and timber for
+                        furniture.</p>
+                </div>
+                <div class="info-footer">📍 Common in: Gazipur, Tangail</div>
+            </div>
+
+            <div class="tree-card category-fruit">
+                <img src="https://images.unsplash.com/photo-1623428187969-5da2dcea5ebf?w=500" class="tree-img"
+                    alt="Litchi">
+                <div class="card-content">
+                    <span class="badge bg-fruit">Fruit</span>
+                    <h3>Litchi</h3>
+                    <p class="scientific-name">Litchi chinensis</p>
+                    <p>A short-lived summer fruit loved for its juicy, sweet white pulp. Dinajpur grows the best
+                        variety.</p>
+                </div>
+                <div class="info-footer">📍 Common in: Dinajpur, Ishwardi</div>
+            </div>
+
+            <div class="tree-card category-fruit">
+                <img src="https://images.unsplash.com/photo-1536510233921-8e5043fce771?w=500" class="tree-img"
+                    alt="Guava">
+                <div class="card-content">
+                    <span class="badge bg-fruit">Fruit</span>
+                    <h3>Guava</h3>
+                    <p class="scientific-name">Psidium guajava</p>
+                    <p>Known as the "Apple of the Tropics." The floating guava markets in Barisal are famous worldwide.
+                    </p>
+                </div>
+                <div class="info-footer">📍 Common in: Barisal, Jhalokathi</div>
+            </div>
+
+            <div class="tree-card category-fruit">
+                <img src="https://images.unsplash.com/photo-1596325066922-297eb0981e59?w=500" class="tree-img"
+                    alt="Coconut">
+                <div class="card-content">
+                    <span class="badge bg-fruit">Fruit</span>
+                    <h3>Coconut</h3>
+                    <p class="scientific-name">Cocos nucifera</p>
+                    <p>A staple of the coastal districts. Used for water, oil, food, and coir (fiber).</p>
+                </div>
+                <div class="info-footer">📍 Common in: Khulna, Noakhali, Barisal</div>
+            </div>
+
+            <div class="tree-card category-fruit">
+                <img src="https://images.unsplash.com/photo-1596556108139-3893049b4b9e?w=500" class="tree-img"
+                    alt="Blackberry">
+                <div class="card-content">
+                    <span class="badge bg-fruit">Fruit</span>
+                    <h3>Blackberry</h3>
+                    <p class="scientific-name">Syzygium cumini</p>
+                    <p>A large tree that produces deep purple berries in summer. It stains the tongue purple!</p>
+                </div>
+                <div class="info-footer">📍 Season: May - July</div>
+            </div>
+
+            <div class="tree-card category-flower">
+                <img src="https://images.unsplash.com/photo-1524255776361-26d9c612f026?w=500" class="tree-img"
+                    alt="Krishnachura">
+                <div class="card-content">
+                    <span class="badge bg-flower">Flowering</span>
+                    <h3>Krishnachura</h3>
+                    <p class="scientific-name">Delonix regia</p>
+                    <p>Also known as Royal Poinciana. It paints the streets of Dhaka red during early summer.</p>
+                </div>
+                <div class="info-footer">📍 Season: April - June</div>
+            </div>
+
+            <div class="tree-card category-flower">
+                <img src="https://images.unsplash.com/photo-1552654372-5b9c02eb9621?w=500" class="tree-img"
+                    alt="Shapla">
+                <div class="card-content">
+                    <span class="badge bg-flower">Flowering</span>
+                    <h3>Shapla</h3>
+                    <p class="scientific-name">Nymphaea nouchali</p>
+                    <p>The National Flower of Bangladesh. It blooms in beels, haors, and ponds across the country.</p>
+                </div>
+                <div class="info-footer">📍 Type: Aquatic Plant</div>
+            </div>
+
+            <div class="tree-card category-flower">
+                <img src="https://images.unsplash.com/photo-1620668600115-414878a84617?w=500" class="tree-img"
+                    alt="Shimul">
+                <div class="card-content">
+                    <span class="badge bg-flower">Flowering</span>
+                    <h3>Shimul</h3>
+                    <p class="scientific-name">Bombax ceiba</p>
+                    <p>An icon of Spring (Falgun). Large red flowers appear on leafless branches. Produces cotton later.
+                    </p>
+                </div>
+                <div class="info-footer">📍 Season: Spring (Feb-March)</div>
+            </div>
+
+            <div class="tree-card category-flower">
+                <img src="https://images.unsplash.com/photo-1596436574229-373e449f8544?w=500" class="tree-img"
+                    alt="Kodom">
+                <div class="card-content">
+                    <span class="badge bg-flower">Flowering</span>
+                    <h3>Kodom</h3>
+                    <p class="scientific-name">Neolamarckia cadamba</p>
+                    <p>The symbol of the rainy season (Monsoon) in Bengali literature. Resembles a golden ball.</p>
+                </div>
+                <div class="info-footer">📍 Season: Rainy Season</div>
+            </div>
+
+            <div class="tree-card category-flower">
+                <img src="https://images.unsplash.com/photo-1615655761358-1f14d8514930?w=500" class="tree-img"
+                    alt="Polash">
+                <div class="card-content">
+                    <span class="badge bg-flower">Flowering</span>
+                    <h3>Polash</h3>
+                    <p class="scientific-name">Butea monosperma</p>
+                    <p>Known as "Flame of the Forest" due to its bright orange-red flowers.</p>
+                </div>
+                <div class="info-footer">📍 Season: Spring</div>
+            </div>
+
+            <div class="tree-card category-flower">
+                <img src="https://images.unsplash.com/photo-1634548487920-56f4d2f1f50c?w=500" class="tree-img"
+                    alt="Shiuli">
+                <div class="card-content">
+                    <span class="badge bg-flower">Flowering</span>
+                    <h3>Shiuli</h3>
+                    <p class="scientific-name">Nyctanthes arbor-tristis</p>
+                    <p>Blooms at night and falls by dawn. Its smell signals the arrival of Autumn (Sharat) and Durga
+                        Puja.</p>
+                </div>
+                <div class="info-footer">📍 Season: Autumn</div>
+            </div>
+
+            <div class="tree-card category-medicine">
+                <img src="https://images.unsplash.com/photo-1628062140889-a2e6f4068564?w=500" class="tree-img"
+                    alt="Chandan Wood">
+                <div class="card-content">
+                    <span class="badge bg-medicine">Medicinal</span>
+                    <h3>Chandan</h3>
+                    <p class="scientific-name">Santalum album</p>
+                    <p>One of the most valuable trees in the world. The wood paste is famous for its cooling effect,
+                        skin care benefits, and sweet fragrance.</p>
+                </div>
+                <div class="info-footer">📍 Use: Perfume, Skin Care</div>
+            </div>
+
+            <div class="tree-card category-medicine">
+                <img src="https://images.unsplash.com/photo-1598512752271-33f913a5af13?w=500" class="tree-img"
+                    alt="Neem">
+                <div class="card-content">
+                    <span class="badge bg-medicine">Medicinal</span>
+                    <h3>Neem</h3>
+                    <p class="scientific-name">Azadirachta indica</p>
+                    <p>The "Village Pharmacy." Used for skin diseases, natural pesticide, and dental health.</p>
+                </div>
+                <div class="info-footer">📍 Use: Antiseptic, Skin care</div>
+            </div>
+
+            <div class="tree-card category-medicine">
+                <img src="https://images.unsplash.com/photo-1599527653631-509f6f3e6224?w=500" class="tree-img"
+                    alt="Tulsi">
+                <div class="card-content">
+                    <span class="badge bg-medicine">Medicinal</span>
+                    <h3>Tulsi</h3>
+                    <p class="scientific-name">Ocimum tenuiflorum</p>
+                    <p>A sacred plant in Hinduism. The leaves are excellent for curing coughs, colds, and improving
+                        immunity.</p>
+                </div>
+                <div class="info-footer">📍 Use: Cold & Cough</div>
+            </div>
+
+            <div class="tree-card category-medicine">
+                <img src="https://images.unsplash.com/photo-1570533519391-a185b3b18d2d?w=500" class="tree-img"
+                    alt="Amloki">
+                <div class="card-content">
+                    <span class="badge bg-medicine">Medicinal</span>
+                    <h3>Amloki</h3>
+                    <p class="scientific-name">Phyllanthus emblica</p>
+                    <p>Also known as Indian Gooseberry. One of the richest natural sources of Vitamin C.</p>
+                </div>
+                <div class="info-footer">📍 Use: Digestion, Hair, Immunity</div>
+            </div>
+
+            <div class="tree-card category-medicine">
+                <img src="https://images.unsplash.com/photo-1630327685791-034870192e44?w=500" class="tree-img"
+                    alt="Horitoki">
+                <div class="card-content">
+                    <span class="badge bg-medicine">Medicinal</span>
+                    <h3>Horitoki</h3>
+                    <p class="scientific-name">Terminalia chebula</p>
+                    <p>Part of the famous "Triphala" medicine. It is a powerful detoxifier.</p>
+                </div>
+                <div class="info-footer">📍 Use: Stomach Health</div>
+            </div>
+
+            <div class="tree-card category-medicine">
+                <img src="https://images.unsplash.com/photo-1596547609652-9cf5d8d76921?w=500" class="tree-img"
+                    alt="Aloe Vera">
+                <div class="card-content">
+                    <span class="badge bg-medicine">Medicinal</span>
+                    <h3>Aloe Vera</h3>
+                    <p class="scientific-name">Aloe barbadensis miller</p>
+                    <p>Though a succulent, it's a staple medicinal plant in BD. The gel is used for burns and skincare.
+                    </p>
+                </div>
+                <div class="info-footer">📍 Use: Burns, Beauty</div>
+            </div>
+
+            <div class="tree-card category-food">
+                <img src="https://images.unsplash.com/photo-1597916829826-02e5bb4a54e0?w=500" class="tree-img"
+                    alt="Paddy">
+                <div class="card-content">
+                    <span class="badge bg-food">Food Source</span>
+                    <h3>Rice</h3>
+                    <p class="scientific-name">Oryza sativa</p>
+                    <p>The staple food of Bangladesh. "Maache-Bhaate Bangali" (Bengalis live on fish and rice).</p>
+                </div>
+                <div class="info-footer">📍 Common in: All Districts</div>
+            </div>
+
+            <div class="tree-card category-food">
+                <img src="https://images.unsplash.com/photo-1564676579848-18e384594c92?w=500" class="tree-img"
+                    alt="Tea Garden">
+                <div class="card-content">
+                    <span class="badge bg-food">Food Source</span>
+                    <h3>Tea</h3>
+                    <p class="scientific-name">Camellia sinensis</p>
+                    <p>Bangladesh is famous for its tea gardens. It is the primary cash crop of the Sylhet region.</p>
+                </div>
+                <div class="info-footer">📍 Common in: Sylhet, Moulvibazar</div>
+            </div>
+
+            <div class="tree-card category-food">
+                <img src="https://images.unsplash.com/photo-1610996884611-665e75ce7c8d?w=500" class="tree-img"
+                    alt="Betel Nut">
+                <div class="card-content">
+                    <span class="badge bg-food">Food Source</span>
+                    <h3>Supari</h3>
+                    <p class="scientific-name">Areca catechu</p>
+                    <p>A tall, slender palm tree. The nut is chewed with Betel leaf (Paan) across the country.</p>
+                </div>
+                <div class="info-footer">📍 Common in: Coastal Districts</div>
+            </div>
+
+            <div class="tree-card category-food">
+                <img src="https://images.unsplash.com/photo-1549405626-d668c2d28f8f?w=500" class="tree-img"
+                    alt="Date Palm">
+                <div class="card-content">
+                    <span class="badge bg-food">Food Source</span>
+                    <h3>Khejur</h3>
+                    <p class="scientific-name">Phoenix sylvestris</p>
+                    <p>In winter, these trees are tapped for sweet sap (Rosh) to make Gur (molasses) and Pitha.</p>
+                </div>
+                <div class="info-footer">📍 Common in: Jessore, Faridpur</div>
+            </div>
+
+            <div class="tree-card category-food">
+                <img src="https://images.unsplash.com/photo-1601625463687-25541fb72f90?w=500" class="tree-img"
+                    alt="Sugarcane">
+                <div class="card-content">
+                    <span class="badge bg-food">Food Source</span>
+                    <h3>Sugarcane</h3>
+                    <p class="scientific-name">Saccharum officinarum</p>
+                    <p>Used to produce sugar and gur. Chewing raw sugarcane is a popular village treat.</p>
+                </div>
+                <div class="info-footer">📍 Common in: Northern Districts</div>
+            </div>
+
+            <div class="tree-card category-food">
+                <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=500" class="tree-img"
+                    alt="Tomato">
+                <div class="card-content">
+                    <span class="badge bg-food">Food Source</span>
+                    <h3>Tomato</h3>
+                    <p class="scientific-name">Solanum lycopersicum</p>
+                    <p>A major winter crop in Bangladesh. Used daily in salads, curries, and chutneys.</p>
+                </div>
+                <div class="info-footer">📍 Season: Winter (Rabi Crop)</div>
+            </div>
+
+            <div class="tree-card category-timber">
+                <img src="https://images.unsplash.com/photo-1543258103-a62bdc069871?w=500" class="tree-img"
+                    alt="Mahogany">
+                <div class="card-content">
+                    <span class="badge bg-timber">Timber</span>
+                    <h3>Mahogany</h3>
+                    <p class="scientific-name">Swietenia macrophylla</p>
+                    <p>The most popular wood for making doors, windows, and furniture in Bangladesh due to its
+                        durability.</p>
+                </div>
+                <div class="info-footer">📍 Use: Premium Furniture</div>
+            </div>
+
+            <div class="tree-card category-timber">
+                <img src="https://images.unsplash.com/photo-1616680687158-944a3a89e602?w=500" class="tree-img"
+                    alt="Teak">
+                <div class="card-content">
+                    <span class="badge bg-timber">Timber</span>
+                    <h3>Segun</h3>
+                    <p class="scientific-name">Tectona grandis</p>
+                    <p>Known as the "King of Timber." Extremely expensive and durable, used for luxury furniture.</p>
+                </div>
+                <div class="info-footer">📍 Common in: Chittagong Hills</div>
+            </div>
+
+            <div class="tree-card category-timber">
+                <img src="https://images.unsplash.com/photo-1444211353229-37f28c50ebba?w=500" class="tree-img"
+                    alt="Sal Forest">
+                <div class="card-content">
+                    <span class="badge bg-timber">Timber</span>
+                    <h3>Gojari</h3>
+                    <p class="scientific-name">Shorea robusta</p>
+                    <p>Forms the famous Bhawal National Park forest in Gazipur. Used for construction and poles.</p>
+                </div>
+                <div class="info-footer">📍 Common in: Gazipur, Tangail</div>
+            </div>
+
+            <div class="tree-card category-timber">
+                <img src="https://images.unsplash.com/photo-1588691883391-766b539a2f43?w=500" class="tree-img"
+                    alt="Sundarbans">
+                <div class="card-content">
+                    <span class="badge bg-timber">Timber</span>
+                    <h3>Sundari</h3>
+                    <p class="scientific-name">Heritiera fomes</p>
+                    <p>The tree that gave the "Sundarbans" its name. It is a mangrove species with strong wood.</p>
+                </div>
+                <div class="info-footer">📍 Common in: Sundarbans</div>
+            </div>
+
+            <div class="tree-card category-timber">
+                <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=500" class="tree-img"
+                    alt="Rain Tree">
+                <div class="card-content">
+                    <span class="badge bg-timber">Timber</span>
+                    <h3>Rain Tree</h3>
+                    <p class="scientific-name">Samanea saman</p>
+                    <p>A massive umbrella-shaped tree seen on roadsides. Provides shade and affordable timber.</p>
+                </div>
+                <div class="info-footer">📍 Common in: Roadsides</div>
+            </div>
+
+            <div class="tree-card category-timber">
+                <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=500" class="tree-img"
+                    alt="Forest Path">
+                <div class="card-content">
+                    <span class="badge bg-timber">Timber</span>
+                    <h3>Gorjon</h3>
+                    <p class="scientific-name">Dipterocarpus turbinatus</p>
+                    <p>Tall, straight trees common in the forests of Cox's Bazar and Chittagong. Used for railway
+                        sleepers.</p>
+                </div>
+                <div class="info-footer">📍 Common in: Cox's Bazar</div>
+            </div>
+
+        </section>
+
         <section id="club" class="club-section display-flex">
             <div class="club-content">
                 <h2>The Tree Plantation Club 🌳</h2>
@@ -70,6 +458,12 @@
             </div>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2025 Green Bangladesh Club. Let's breathe freely.</p>
+    </footer>
+
+    <script src="knowledge.js"></script>
 
 </body>
 
