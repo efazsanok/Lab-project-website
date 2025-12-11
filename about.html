@@ -23,6 +23,54 @@
     <header>
 
     </header>
+
+        <main>
+
+
+
+        
+        <section id="club" class="club-section display-flex">
+            <div class="club-content">
+                <h2>The Tree Plantation Club 🌳</h2>
+                <p>Join our mission to restore the city's green cover. As a member, you get invites to our weekend
+                    planting drives and workshops.</p>
+                <ul>
+                    <li>🌱 Monthly Planting Events</li>
+                    <li>🎓 Free Gardening Workshops</li>
+                    <li>✨ Community Meetups</li>
+                </ul>
+            </div>
+
+            <div class="club-form">
+                <h2>Join the Green Army</h2>
+                <p>Register today to get invites for our next plantation drive.</p><br>
+                <form action="register.php" method="POST">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" required placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+                    </div>
+                    <div class="form-group">
+                        <label for="type">How can you help?</label>
+                        <select id="type" name="type">
+                            <option value="volunteer">I want to plant trees (Volunteer Planter)</option>
+                            <option value="donor">I want to donate funds (Financial Donor)</option>
+                            <option value="partner">I have land for planting (Event Host)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-submit">Register Now</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
 </body>
 
 </html>
