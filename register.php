@@ -6,8 +6,12 @@ $password = "";
 $dbname = "green_army_db";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-
+try {
+    $conn = new mysqli($servername, $username, $password, $dbname);
+}
+catch(mysqli_sql_exception){
+    echo "Connection failed";
+}
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
@@ -43,3 +47,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 $conn->close();
+?>
