@@ -8,7 +8,6 @@
 }
 
 /* Shared styles */
-
 body {
     margin: 0;
     background-color: white;
@@ -77,7 +76,6 @@ h4 {
 
 
 /* Navbar styles */
-
 .brand {
     font-weight: 700;
     font-size: 2rem;
@@ -109,7 +107,6 @@ h4 {
 /* Index.html css */
 
 /* Bannner styles */
-
 .banner {
     height: 80vh;
     background-image: url("../images/banner.jpg");
@@ -152,7 +149,6 @@ h4 {
 }
 
 /*Mission Sections styles */
-
 .mission-section {
     padding: 80px 10%;
 }
@@ -184,7 +180,6 @@ h4 {
 }
 
 /* Info section styles*/
-
 .info-section {
     background-color: #1b4332;
     color: white;
@@ -205,7 +200,6 @@ h4 {
 }
 
 /* knowledge section styles */
-
 .knowledge-section {
     background-color: #f5f5dc;
     align-items: center;
@@ -230,7 +224,6 @@ h4 {
 }
 
 /* Projects section styles */
-
 .projects-section {
     padding: 80px 10%;
 }
@@ -260,7 +253,6 @@ h4 {
 }
 
 /* Club Section styles*/
-
 .club-section {
     background-color: #d8f3dc;
     padding: 40px 10%;
@@ -329,7 +321,6 @@ footer {
 /* Knowledge.html css */
 
 /* Header styles */
-
 .header-section {
     text-align: center;
     padding: 50px 20px;
@@ -348,7 +339,6 @@ footer {
 }
 
 /* Search Bar Styling */
-
 .search-container {
     text-align: center;
     margin-top: -25px;
@@ -373,7 +363,6 @@ footer {
 }
 
 /* Filter container styles */
-
 .filter-container {
     text-align: center;
     padding: 30px;
@@ -397,9 +386,7 @@ footer {
     color: white;
 }
 
-
 /* Tree Grid styles */
-
 .tree-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -484,7 +471,6 @@ footer {
 /* About.html css */
 
 /* Header Section styles */
-
 .about-header {
     background: url('../images/banner.jpg');
     background-size: cover;
@@ -500,7 +486,6 @@ footer {
 }
 
 /* Blog Section styles */
-
 .blog-container {
     max-width: 900px;
     margin: 40px auto;
@@ -521,8 +506,7 @@ footer {
     margin-bottom: 20px;
 }
 
-/* Cards for "What We Do" */
-
+/* What We Do section styles */
 .activity-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -545,7 +529,7 @@ footer {
     display: block;
 }
 
-/* Comparison Section (Benefits vs Risks) */
+/* Comparison section section styles */
 .impact-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -570,6 +554,8 @@ footer {
 .impact-box h3 {
     margin-top: 0;
     font-size: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .benefits h3 {
@@ -588,21 +574,18 @@ footer {
 .impact-list li {
     margin-bottom: 12px;
     padding-left: 25px;
-    position: relative;
 }
 
 /* Custom Bullet Points */
 .benefits li::before {
-    content: '✔';
-    position: absolute;
+    content: '✔  ';
     left: 0;
     color: #228b22;
     font-weight: bold;
 }
 
 .risks li::before {
-    content: '⚠';
-    position: absolute;
+    content: '⚠  ';
     left: 0;
     color: #ff0000;
     font-weight: bold;
